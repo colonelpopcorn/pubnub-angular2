@@ -11,6 +11,7 @@ export declare class PubNubAngular {
     getMessage(channel: string | string[], callback: (message: any) => void): any[];
     getPresence(channel: string | string[], callback: (presence: any) => void): void;
     getStatus(channel: string | string[], callback: (status: any) => void): void;
+    getSubscribedChannels(): string[];
     getError(channel: string | string[], callback: (error: any) => void): void;
     clean(channel: string | string[]): void;
     release(channel: string | string[]): void;
